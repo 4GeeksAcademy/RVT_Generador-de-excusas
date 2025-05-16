@@ -45,6 +45,4 @@ window.onload = function() {
   } else {
     console.warn("Botón no encontrado");
   }
-
-  
-};
+  };
