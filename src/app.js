@@ -33,12 +33,18 @@ window.onload = function() {
       when[whennum]
     );
   }
-  document.querySelector("#excuse").innerHTML = aleatorio(
-    who,
-    action,
-    what,
-    when
-  );
+
   // function onLoad() {}
   console.log("Hello Rigo from the console!");
+
+    const button = document.querySelector("button");
+  if (button) {
+    button.addEventListener("click", function () {
+      document.querySelector("#excuse").innerHTML = aleatorio(who, action, what, when);
+    });
+  } else {
+    console.warn("Botón no encontrado");
+  }
+
+  
 };
